@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--libreria de font awesome-->
+    <title>Portfolio RETAMOZO</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!-- Menu encabezado-->
+    <div class="container-encabezado">
+        <header>
+            <div class="logotipo"> <!--logotipo link con mi nombre-->
+                <a href="#">Paola</a> <!--TIP se usa #top o # para vincular la parte
+                    superior de la pagina actual-->
+            </div>
+            <nav id="nav"><!--ver-->
+                <ul><!--links para mi barra-->
+                    <li><a href="#Sobremi" onclick="seleccionar()">Sobre Mi</a></li>
+                    <li><a href="#curriculum"onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#contacto"onclick="seleccionar()">Contacto</a></li>
+                    <!--<li><a href="#inicio"></a></li>-->
+                </ul>
+            </nav>
+            <div class="nav-responsive"onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i><!--bar de f-awesome-->
+            </div><!--formato para incrustar logo bar-->
+        </header>
+    </div>
+    <!--SECCION INICIO para inicio, probando una seccion-->
+    <section id="inicio" class="inicio">
+        <div class="banner-info">
+            <div class="container-img">
+                <img src="img/Pao 1.jpg" alt="foto personal">
+            </div>
+            <h1>Paola Retamozo</h1>
+            <h2>Web developer en proceso</h2>
+            <div class="social">
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/paola-retamozo-706843a0/"><i
+                            class="fa-brands fa-linkedin"></i></a><!-- poner en el # mi linkedin-->
+                    <!--se recomienda solo colocar redes sociales que sumen a lo que cuenta el portfolio
+                    por ello solo utilizo linkedin-->
+                    <a href="https://mail.google.com"><i class="fa-solid fa-square-envelope"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- SECCION SOBRE MI -->
+    <section id="Sobremi" class="Sobremi">
+        <div class="Contenido-Sobremi">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola Soy Paola,</span> mama (adoptiva por supuesto) de Otto un perrito precioso de
+                casi
+                11 años, que es mi compañerito de vida cotidiano. <br>En un momento de mi vida he pasado del gusto por
+                el
+                derecho y estudiar abogacía a una carrera de ingeniería informática ya que mi pasión por la informática
+                y la
+                tecnología ha sabido ser más fuertes para mí.<br> Al día de hoy me encuentras incursionando en
+                Programación web
+                Front- End y recomenzando Ingeniería en Sistemas.<br>Siempre ADOPTA! NO COMPRES🐶❤</p>
+        </div>
+    </section>
+    <!--SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-curriculum">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izq">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Polimodal en Comunicación, Arte y diseño</h4>
+                        <span class="Escuela">Escuela Superior de Comercio Nro 43.</span>
+                        <span class="año">2001-2003</span>
+                        <p> Completar info, ver que mas agregaria Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Recusandae aliquid cupiditate soluta aliquam nisi unde impedit ipsa eos, quod nemo
+                            sequi dolores illo quisquam ex asperiores repudiandae cumque itaque necessitatibus.
+                        </p> <!-- esc es palabra reservada, cambiar para diferenciar estilos entre escuela y año-->
+                    </div>
+                </div>
+                <div class="col der">
+                    <h3>Educación</h3>
+                    <div class="item der">
+                        <h4>Programador Web Front End Inicial</h4>
+                        <span class="Escuela">Universidad Tecnologica Nacional B.A.</span>
+                        <span class="año">En curso actualmente</span>
+                        <p> Completar info, ver que mas agregaria Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Recusandae aliquid cupiditate soluta aliquam nisi unde impedit ipsa eos, quod nemo
+                            sequi dolores illo quisquam ex asperiores repudiandae cumque itaque necessitatibus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<footer>
+    <!--<a href="#pao" class="banner-info">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>--> <!--no funciono el intento-->
+    <div class="social">
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/paola-retamozo-706843a0/"><i
+                    class="fa-brands fa-linkedin"></i></a><!-- poner en el # mi linkedin-->
+            <!--se recomienda solo colocar redes sociales que sumen a lo que cuenta el portfolio
+            por ello solo utilizo linkedin-->
+            <a href="https://mail.google.com"><i class="fa-solid fa-square-envelope"></i></a>
+        </div>
+    </div>
+    <p>Paola Retamozo - 2024 - Argentina</p>
+</footer>
+<script src="app.js"></script>
+</body>
+
+</html>
